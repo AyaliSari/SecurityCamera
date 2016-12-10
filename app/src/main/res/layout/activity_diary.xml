@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.owner.webcam123.Diary">
+    tools:context="com.example.owner.securitycamera.Diary">
 
     <TextView
         android:text="Waching_avent_video"

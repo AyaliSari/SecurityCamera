@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
 
-                Intent i=new Intent(MainActivity.this,LiveCamera.class);//activate camera button
-                startActivity(i);
+         //       Intent i=new Intent(MainActivity.this,LiveCamera.class);//activate camera button
+          //      startActivity(i);
             }
 
         });
