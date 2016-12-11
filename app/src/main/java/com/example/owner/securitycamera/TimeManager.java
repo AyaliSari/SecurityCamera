@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class TimeManager extends AppCompatActivity {
-Button button;
+Button button, button2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +20,17 @@ Button button;
             public void onClick(View v){
 
                 Intent i=new Intent(TimeManager.this,Settings.class);
+                startActivity(i);
+            }
+
+        });
+
+        button2=(Button) findViewById(R.id.buttontill);//pressing the OK button return the user to settings page
+        button2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+                Intent i=new Intent(TimeManager.this,TimeManager2.class);
                 startActivity(i);
             }
 

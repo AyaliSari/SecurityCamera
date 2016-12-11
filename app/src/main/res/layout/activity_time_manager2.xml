@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.owner.securitycamera.TimeManager">
+    tools:context="com.example.owner.securitycamera.TimeManager2">
 
     <TextView
         android:text="Choose camera activity time"
@@ -21,18 +21,8 @@
         android:textStyle="normal|bold"
         android:textSize="18sp" />
 
-    <Button
-        android:text="OK"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button123"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="18sp" />
-
     <TextView
-        android:text="SINCE"
+        android:text="Till"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="37dp"
@@ -53,16 +43,12 @@
         android:id="@+id/timePicker" />
 
     <Button
-        android:text="Till"
+        android:text="OK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
-        android:id="@+id/buttontill"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
-        android:textStyle="normal|bold"
+        android:id="@+id/button1234"
         android:textSize="18sp"
-        android:textColor="@color/colorAccent"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

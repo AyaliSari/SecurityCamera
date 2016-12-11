@@ -10,64 +10,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.owner.securitycamera.Settings">
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:ems="10"
-        android:id="@+id/editText5"
-        android:layout_marginTop="113dp"
-        android:layout_marginLeft="38dp"
-        android:layout_marginStart="38dp"
-        android:layout_below="@+id/textView2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="phone"
-        android:ems="10"
-        android:id="@+id/editText4"
-        android:layout_below="@+id/textView2"
-        android:layout_alignLeft="@+id/editText5"
-        android:layout_alignStart="@+id/editText5"
-        android:layout_marginTop="28dp" />
-
-    <TextView
-        android:text="Mail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView3"
-        android:layout_alignBaseline="@+id/editText4"
-        android:layout_alignBottom="@+id/editText4"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="11dp"
-        android:layout_marginEnd="11dp" />
-
-    <TextView
-        android:text="SMS"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView5"
-        android:layout_alignBaseline="@+id/editText5"
-        android:layout_alignBottom="@+id/editText5"
-        android:layout_alignRight="@+id/textView3"
-        android:layout_alignEnd="@+id/textView3" />
-
-    <TextView
-        android:text="Choose alert sensativity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView7"
-        android:textSize="18sp"
-        android:textStyle="normal|bold"
-        android:layout_below="@+id/editText5"
-        android:layout_alignRight="@+id/textView5"
-        android:layout_alignEnd="@+id/textView5"
-        android:layout_marginTop="13dp" />
-
     <Button
         android:text="OK"
         android:layout_width="wrap_content"
@@ -93,14 +35,64 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
+    <TextView
+        android:text="SMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView2"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_marginTop="32dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:id="@+id/editText3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_below="@+id/editText3"
+        android:layout_alignEnd="@+id/editText3"
+        android:layout_marginTop="34dp"
+        android:id="@+id/editText4" />
+
+    <TextView
+        android:text="Mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_marginRight="11dp"
+        android:layout_alignBaseline="@+id/editText4"
+        android:layout_alignBottom="@+id/editText4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp" />
+
+    <TextView
+        android:text="Choose alert sensativity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_marginTop="27dp" />
+
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="70pt"
         android:id="@+id/rgroup"
-        android:layout_marginTop="12dp"
         android:layout_below="@+id/textView7"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp">
 
         <RadioButton
             android:text="High"
@@ -137,9 +129,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/timeBt"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_below="@+id/rgroup"
-        android:layout_toRightOf="@+id/okBt"
-        android:layout_toEndOf="@+id/okBt"
-        android:layout_marginTop="28dp" />
+        android:layout_marginBottom="24dp"
+        android:layout_above="@+id/okBt"
+        android:layout_alignEnd="@+id/editText4"
+        android:layout_marginEnd="24dp" />
+
 
 </RelativeLayout>
